@@ -1,0 +1,28 @@
+//
+//  iosOpenCV.pch
+//  iosOpenCV
+//
+//  Created by mac on 2019/7/21.
+//  Copyright © 2019 David Ji. All rights reserved.
+//
+
+#ifndef iosOpenCV_pch
+#define iosOpenCV_pch
+
+#import <Availability.h>
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#import "opencv2/xphoto.hpp"
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#endif /* iosOpenCV_pch */
